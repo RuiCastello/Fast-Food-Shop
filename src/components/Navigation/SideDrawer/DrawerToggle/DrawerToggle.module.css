@@ -1,0 +1,57 @@
+.DrawerToggle {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.DrawerToggle div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+}
+
+
+
+.DrawerToggleAlt {
+    width: 40px;
+    height: 56px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.DrawerToggleAlt div {
+    width: 90%;
+    height: 6px;
+    background-color: black;
+}
+
+.DrawerToggleAlt div:nth-child(1) {
+    transform: translate(0px, 12px) rotateZ(45deg);
+  }
+.DrawerToggleAlt div:nth-child(2) {
+    transform: rotateZ(45deg);
+  }
+.DrawerToggleAlt div:nth-child(3) {
+    transform: translate(0px, -12px) rotateZ(-45deg);
+  }
+
+
+@media (min-width: 500px) {
+    .DrawerToggle {
+        display: none;
+    }
+    .DrawerToggleAlt {
+        display: none;
+    }
+}
